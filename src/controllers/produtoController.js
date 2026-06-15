@@ -28,8 +28,9 @@ const produtoController = {
 
     criar: async (req, res) => {
         try {
+            print(req.body);
             const { nome, valor, idCategoria } = req.body;
-            
+
             const baseUrl = `${req.protocol}://${req.get("host")}`;
 
             const caminhoImagem = req.file
