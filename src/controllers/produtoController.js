@@ -28,7 +28,7 @@ const produtoController = {
 
     criar: async (req, res) => {
         try {
-            print(req.body);
+            console.log(req.body)
             const { nome, valor, idCategoria } = req.body;
 
             const baseUrl = `${req.protocol}://${req.get("host")}`;
